@@ -1,6 +1,7 @@
+require("dotenv").config();
 const mongoose=require("mongoose");
-const config=require("config");
-const secret=config.get("secret");
+// const config=require("config");
+const secret=process.env.SECRET;
 const encrypt=require("mongoose-encryption");
 
 
